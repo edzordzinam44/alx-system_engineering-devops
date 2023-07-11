@@ -1,2 +1,2 @@
 #!/bin/bash
-IFS= read -r line 
+IFS= read -r line echo "$line" | rev 
