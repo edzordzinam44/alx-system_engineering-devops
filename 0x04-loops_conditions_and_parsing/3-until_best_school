@@ -2,8 +2,8 @@
 # This scripts display Best School 10 times using until
 
 num="1"
-until [ $num -eq 10 ]
-do
+
+until [ $num -eq 10 ]; do
 	echo "Best School"
 	((num++))
 done
