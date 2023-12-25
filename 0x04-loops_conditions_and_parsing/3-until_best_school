@@ -2,7 +2,7 @@
 # This scripts display Best School 10 times using "unti"
 
 num="1"
-until [ $num -ge 10 ]
+until [ $num -gt 10 ]
 do
 	echo "Best School"
 	((num++))
