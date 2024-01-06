@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script shows listening sockect,PID and name of a program which it belongs to.
+
+nestat -lp
