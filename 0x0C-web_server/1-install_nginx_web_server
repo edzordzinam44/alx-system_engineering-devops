@@ -1,22 +1,8 @@
 #!/usr/bin/env bash
 # Install a nginx web server
 
-sudo apt-get update -y
-sudo apt-get install -y ngnix
-
-cat <<EOF > /etc/ngnix/sites-available/default
-server {
-	listen 80;
-	listen [::]:80;
-
-	root /var/www/html;
-	index index.html index.htm index.ngnix-debian.html;
-
-	location / {
-		return 200 'Hello World!';
-	}
-}
-EOF
-
-
-sudo service ngnix restart
+apt-get update
+apt-get -y install ngnix
+ufw allow 'Ngnix HTTP'
+echo "Hello World!" > /var/www/html/index.html
+service ngnix start
