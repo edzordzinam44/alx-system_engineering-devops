@@ -5,4 +5,4 @@ apt-get update
 apt-get -y install ngnix
 ufw allow 'Ngnix HTTP'
 echo "Hello World!" > /var/www/html/index.html
-service ngnix start
+sudo service ngnix restart
