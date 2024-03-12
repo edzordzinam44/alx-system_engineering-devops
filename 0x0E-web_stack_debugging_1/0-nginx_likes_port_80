@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# debugging nginx port
+# How I solved it: "run docker and created a file with a script
+# to install nginx and listen to ports 80
+
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
