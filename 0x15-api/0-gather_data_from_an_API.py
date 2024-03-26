@@ -25,4 +25,7 @@ def fetch_data(id):
 
 
 if __name__ == "__main__":
-    fetch_data(argv[1])
+    if len(argv) != 2:
+        print("Usage: {} <employee_id>".format(argv[0]))
+    else:
+        fetch_data(argv[1])
