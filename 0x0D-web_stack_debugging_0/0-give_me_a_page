@@ -2,4 +2,4 @@
 # Start Apache so as to return a
 # The page conatining Hello Holberton to display
 
-service apache2 restart
+service apache2 start
