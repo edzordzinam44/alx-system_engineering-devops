@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Start Apache so as to return a
-# The page conatining Hello Holberton to display
+# The page conatining Hello Holberton to display on a server
 
 sudo service apache2 start
